@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class modelPlayer : MonoBehaviour
 {
-    private float runSpeed = 10.0f;
+    public float runSpeed = 10.0f;
     public float jumpSpeed = 22.0f;
 
     public void setRunspeed(float speed)

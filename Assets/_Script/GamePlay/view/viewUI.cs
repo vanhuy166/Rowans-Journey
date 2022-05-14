@@ -23,13 +23,13 @@ public class viewUI : MonoBehaviour
         if (skill.value >= 1)
         {
             Color newcolor = isSkill.color;
-            newcolor.a = 255.0f;
+            newcolor.a = 1;
             isSkill.color = newcolor;
         }
         else
         {
             Color newcolor = isSkill.color;
-            newcolor.a = 0.0f;
+            newcolor.a = 0;
             isSkill.color = newcolor;
         }
     }

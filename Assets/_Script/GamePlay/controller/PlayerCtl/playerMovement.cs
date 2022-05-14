@@ -7,12 +7,12 @@ public class playerMovement : MonoBehaviour
     private playerCtl playerctl;
 
     private float jumpspeed;
-    private float runspeed;
     private Rigidbody2D rig;
 
     private int PlayerLayer, GroundLayer;
     private bool jumpOffCoroutineRunning = false;
     private bool clickjump = true;
+
     private void Awake()
     {
         playerctl = GetComponent<playerCtl>();
@@ -31,7 +31,7 @@ public class playerMovement : MonoBehaviour
     }
     void playerJump()
     {
-        if (Input.GetKeyDown(KeyCode.UpArrow)/*&& Mathf.Abs(rig.velocity.y) <= 0.5f*/&& clickjump==true)
+        if (Input.GetKeyDown(KeyCode.UpArrow)&& clickjump==true)
         {
             rig.AddForce(new Vector2(0, jumpspeed), ForceMode2D.Impulse);
             StartCoroutine("isClickjump");
@@ -45,7 +45,7 @@ public class playerMovement : MonoBehaviour
         //kiểm tra nhảy lên
         if (rig.velocity.y > 0)
         {
-            Physics2D.IgnoreLayerCollision(PlayerLayer, GroundLayer, true);
+            Physics2D.IgnoreLayerCollision(PlayerLayer, GroundLayer, true); /*Bỏ qua va chạm giữa nhân vật và bậc*/
         }
         //nhảy xuống dưới
         else if (rig.velocity.y <= 0 && !jumpOffCoroutineRunning)
@@ -57,7 +57,7 @@ public class playerMovement : MonoBehaviour
     IEnumerator JumpOff()
     {
         jumpOffCoroutineRunning = true;
-        Physics2D.IgnoreLayerCollision(PlayerLayer, GroundLayer, true);
+        Physics2D.IgnoreLayerCollision(PlayerLayer, GroundLayer, true); 
         yield return new WaitForSeconds(0.25f);
         Physics2D.IgnoreLayerCollision(PlayerLayer, GroundLayer, false);
         jumpOffCoroutineRunning = false;
@@ -65,7 +65,7 @@ public class playerMovement : MonoBehaviour
     IEnumerator isClickjump()
     {
         clickjump = false;
-        yield return new WaitForSeconds(0.7f);
+        yield return new WaitForSeconds(0.7f); /*khoảng thời gian giữa 2 lần nhảy*/
         clickjump = true;
     }
     void PlayerMove()
@@ -74,7 +74,6 @@ public class playerMovement : MonoBehaviour
         {
             playerctl.viewplayer.run();
         }
-        //playerctl.viewplayer.gameObject.transform.Translate(new Vector2(playerctl.modelplayer.getRunspeed(), 0));
         playerctl.viewplayer.gameObject.transform.position += new Vector3(1, 0, 0) * playerctl.modelplayer.getRunspeed() * Time.deltaTime;
     }
     

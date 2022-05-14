@@ -12,6 +12,7 @@ public class playerCtl : MonoBehaviour
     public playerMovement playermovement;
     public checkDead checkdead;
     public playerSkill playerskill;
+
     private void Awake()
     {
         ctl = GameObject.Find("controller").GetComponent<controller>();
