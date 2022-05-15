@@ -53174,8 +53174,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -9.3200035, y: 0}
-  m_SizeDelta: {x: -12.31, y: 0}
+  m_AnchoredPosition: {x: -6.5825, y: 0}
+  m_SizeDelta: {x: -6.835, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1338868471
 PrefabInstance:
@@ -55862,8 +55862,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.29999542, y: 0}
-  m_SizeDelta: {x: 11.39, y: 0}
+  m_AnchoredPosition: {x: 1.2400017, y: 0}
+  m_SizeDelta: {x: 2.49, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1799345049
 MonoBehaviour:
@@ -56033,7 +56033,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1447912826}
-  offset: {x: 8, y: 0, z: 0}
+  offset: {x: 11, y: 0, z: 0}
   smoothSpeed: 0.17
 --- !u!212 &1817529454
 SpriteRenderer:

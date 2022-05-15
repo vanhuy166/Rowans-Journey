@@ -25,7 +25,6 @@ public class playerSkill : MonoBehaviour
     }
     IEnumerator delaySkill()
     {
-        
         playerctl.modelplayer.setRunspeed(4* runSpeed); /*Tăng tốc tức thì cho nhân vật*/
         playerctl.viewplayer.skill();
         playerctl.ctl.uictl.viewui.skill.value = 0;

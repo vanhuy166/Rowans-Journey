@@ -11,11 +11,6 @@ public class viewTreasure : MonoBehaviour
         ctl = GameObject.Find("controller").GetComponent<controller>();
         ani = GetComponent<Animator>();
     }
-    public void dead()
-    {
-        ani.SetBool("dead", true);
-        Destroy(gameObject,0.3f);
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -24,7 +19,9 @@ public class viewTreasure : MonoBehaviour
             ctl.uictl.congSkill();
             ctl.uictl.congdiem();
             ctl.audioctl.playAudioitem();
-            dead();
+
+            ani.SetBool("dead", true);
+            Destroy(gameObject, 0.3f);
         }
         
     }

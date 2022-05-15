@@ -8,8 +8,10 @@ public class viewPlayer : MonoBehaviour
     public BoxCollider2D box;
     public Animator animator;
     public GameObject khoi;
+    private controller ctl;
     private void Awake()
     {
+        ctl = GameObject.Find("controller").GetComponent<controller>();
         rig = GetComponent<Rigidbody2D>();
         box = GetComponent<BoxCollider2D>();
         animator = GetComponent<Animator>();
@@ -45,5 +47,22 @@ public class viewPlayer : MonoBehaviour
         animator.SetBool("skill", false);
         animator.SetBool("hurt", true);
         khoi.SetActive(false);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.name == "Barrier" && ctl.playerctl.modelplayer.getRunspeed() < ctl.playerctl.modelplayer.getRunspeed1())
+        {
+            StartCoroutine("collisionBarrier");
+        }
+    }
+
+    IEnumerator collisionBarrier()
+    {
+        hurt();
+        ctl.audioctl.playAudiohurt();
+        yield return new WaitForSeconds(0.25f);
+        animator.SetBool("hurt", false);
+        khoi.SetActive(true);
     }
 }

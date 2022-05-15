@@ -70,7 +70,7 @@ public class playerMovement : MonoBehaviour
     }
     void PlayerMove()
     {
-        if (Mathf.Abs(rig.velocity.y) <= 0.1f && playerctl.modelplayer.getRunspeed()<=11.0f && playerctl.modelplayer.getRunspeed() > 0.0f)
+        if (Mathf.Abs(rig.velocity.y) <= 0.1f && playerctl.modelplayer.getRunspeed()<= (playerctl.modelplayer.runSpeed+1.0f) && playerctl.modelplayer.getRunspeed() > 0.0f)
         {
             playerctl.viewplayer.run();
         }

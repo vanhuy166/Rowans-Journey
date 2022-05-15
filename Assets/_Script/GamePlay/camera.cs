@@ -13,6 +13,7 @@ public class camera : MonoBehaviour
     {
         Vector3 target = new Vector3(Player.position.x, 0, transform.position.z);
         Vector3 desiredPosition = target + offset;
+        Debug.Log(offset);
         transform.position = Vector3.SmoothDamp(transform.position, desiredPosition, ref velocity,smoothSpeed);
     }
   
