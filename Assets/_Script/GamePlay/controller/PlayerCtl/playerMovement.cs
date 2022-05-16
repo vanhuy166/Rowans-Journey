@@ -56,6 +56,7 @@ public class playerMovement : MonoBehaviour
     }
     IEnumerator JumpOff()
     {
+        /*kiểm tra và bỏ qua va chạm giữa nhân vật và bậc*/
         jumpOffCoroutineRunning = true;
         Physics2D.IgnoreLayerCollision(PlayerLayer, GroundLayer, true); 
         yield return new WaitForSeconds(0.25f);

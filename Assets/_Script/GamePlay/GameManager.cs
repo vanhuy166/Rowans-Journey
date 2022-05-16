@@ -18,13 +18,11 @@ public class GameManager : MonoBehaviour
     public void pause()
     {
         Time.timeScale = 0f; 
-        ctl.playerctl.modelplayer.setRunspeed(0f);
         ctl.uictl.viewui.pauseGame.SetActive(true);
         ctl.audioctl.pauseAudiobg();
     }
     public void continueGame(){
         Time.timeScale = 1f; 
-        ctl.playerctl.modelplayer.setRunspeed(10.0f);
         ctl.uictl.viewui.pauseGame.SetActive(false);
         ctl.audioctl.playAudiobg();
     }

@@ -13,7 +13,7 @@ public class checkDead : MonoBehaviour
     }
     public void checkPlayerDead()
     {
-        if (playerctl.viewplayer.gameObject.transform.position.y <= -6.5f|| playerctl.ctl.enemiesctl.viewenemies.eatPlayer==true)
+        if (playerctl.viewplayer.gameObject.transform.position.y <= -6f|| playerctl.ctl.enemiesctl.viewenemies.eatPlayer==true)
         {
             isDead();
             dead = true;

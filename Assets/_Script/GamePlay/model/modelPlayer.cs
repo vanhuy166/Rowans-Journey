@@ -6,7 +6,7 @@ public class modelPlayer : MonoBehaviour
 {
     public float runSpeed = 10.0f;
     private float runSpeed1;
-    public float jumpSpeed = 22.0f;
+    public float jumpSpeed = 25.0f;
 
     public void setRunspeed(float speed)
     {
