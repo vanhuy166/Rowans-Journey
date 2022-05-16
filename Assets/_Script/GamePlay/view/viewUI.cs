@@ -14,6 +14,13 @@ public class viewUI : MonoBehaviour
     public Text bestscore;
     public GameObject pauseGame;
     public int mark=0;
+
+    public void Awake()
+    {
+        Color newcolor = isSkill.color;
+        newcolor.a = 1;
+        isSkill.color = newcolor;
+    }
     public void setScore()
     {
         score.text = ""+ mark;
