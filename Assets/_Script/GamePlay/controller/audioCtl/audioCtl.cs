@@ -38,4 +38,8 @@ public class audioCtl : MonoBehaviour
     {
         viewaudio.gameover.Play();
     }
+    public void playAudiowingame()
+    {
+        viewaudio.win.Play();
+    }
 }

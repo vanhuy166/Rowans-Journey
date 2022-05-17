@@ -11,8 +11,10 @@ public class viewUI : MonoBehaviour
     public Image isSkill;
     public GameObject gameover;
     public Text gameoverscore;
+    public Text TitleGame;
     public Text bestscore;
     public GameObject pauseGame;
+    public GameObject winGame;
     public int mark=0;
 
     public void Awake()

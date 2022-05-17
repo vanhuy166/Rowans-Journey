@@ -20,6 +20,7 @@ public class UICtl : MonoBehaviour
     }
     public void checkBestscore()
     {
+
         if(viewui.mark> PlayerPrefs.GetInt("bestscore"))
         {
             PlayerPrefs.SetInt("bestscore", viewui.mark);

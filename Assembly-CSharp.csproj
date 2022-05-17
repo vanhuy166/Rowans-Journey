@@ -74,6 +74,8 @@
     <Compile Include="Assets\_Script\GameGuide\ContainerController.cs" />
     <Compile Include="Assets\_Script\GameGuide\UI_Controller.cs" />
     <Compile Include="Assets\_Script\GamePlay\camera.cs" />
+    <Compile Include="Assets\_Script\GamePlay\view\WinZonePlayer.cs" />
+    <Compile Include="Assets\_Script\GamePlay\view\DeadZonePlayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

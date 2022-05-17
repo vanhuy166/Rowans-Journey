@@ -31,7 +31,7 @@ public class playerMovement : MonoBehaviour
     }
     void playerJump()
     {
-        if (Input.GetKeyDown(KeyCode.UpArrow)&& clickjump==true)
+        if ((Input.GetKeyDown(KeyCode.UpArrow)|| Input.GetKeyDown(KeyCode.Space)) && clickjump==true)
         {
             rig.AddForce(new Vector2(0, jumpspeed), ForceMode2D.Impulse);
             StartCoroutine("isClickjump");

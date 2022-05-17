@@ -10,15 +10,5 @@ public class viewAudio : MonoBehaviour
     public AudioSource breaking;
     public AudioSource hurt;
     public AudioSource gameover;
-
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public AudioSource win;
 }
