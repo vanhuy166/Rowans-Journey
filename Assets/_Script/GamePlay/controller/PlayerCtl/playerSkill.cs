@@ -5,13 +5,16 @@ using UnityEngine;
 public class playerSkill : MonoBehaviour
 {
     private playerCtl playerctl;
+    public modelPlayer modelplayer;
 
     private float runSpeed;
 
     private void Awake()
     {
+        modelplayer = GameObject.Find("model").GetComponent<modelPlayer>();
         playerctl = GetComponent<playerCtl>();
-        runSpeed = playerctl.modelplayer.runSpeed;
+        runSpeed = modelplayer.runSpeed;
+        //Debug.Log(runSpeed);
     }
 
     public void useSkill()

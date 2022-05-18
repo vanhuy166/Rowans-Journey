@@ -5,9 +5,9 @@ using UnityEngine;
 public class viewPlayer : MonoBehaviour
 {
     public Rigidbody2D rig;
-    public BoxCollider2D box;
-    public Animator animator;
-    public GameObject khoi;
+    private BoxCollider2D box;
+    private Animator animator;
+    private GameObject khoi;
     private controller ctl;
     private void Awake()
     {
@@ -55,9 +55,22 @@ public class viewPlayer : MonoBehaviour
         {
             StartCoroutine("collisionBarrier");
         }
+        else if (collision.gameObject.name == "Trap" && ctl.playerctl.modelplayer.getRunspeed() < ctl.playerctl.modelplayer.getRunspeed1())
+        {
+            StartCoroutine("collisionTrap");
+        }
+
     }
 
     IEnumerator collisionBarrier()
+    {
+        hurt();
+        ctl.audioctl.playAudiohurt();
+        yield return new WaitForSeconds(0.25f);
+        animator.SetBool("hurt", false);
+        khoi.SetActive(true);
+    }
+    IEnumerator collisionTrap()
     {
         hurt();
         ctl.audioctl.playAudiohurt();

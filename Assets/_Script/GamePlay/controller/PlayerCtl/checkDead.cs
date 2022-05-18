@@ -26,7 +26,7 @@ public class checkDead : MonoBehaviour
         playerctl.modelplayer.jumpSpeed = 0.0f;
         playerctl.viewplayer.dead();
         playerctl.ctl.uictl.viewui.gameover.SetActive(true);
-        playerctl.ctl.uictl.viewui.TitleGame.text = "GAME OVER!!!";
+        //playerctl.ctl.uictl.viewui.TitleGame.text = "GAME OVER!!!";
         playerctl.ctl.uictl.viewui.setGameoverscore();
         playerctl.ctl.uictl.checkBestscore();
         playerctl.ctl.uictl.viewui.setBestcore();

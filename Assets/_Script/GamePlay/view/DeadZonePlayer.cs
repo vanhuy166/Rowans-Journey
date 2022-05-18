@@ -16,7 +16,6 @@ public class DeadZonePlayer : MonoBehaviour
         Time.timeScale = 0f;
         ctl.uictl.viewui.gameover.SetActive(true);
         ctl.playerctl.viewplayer.dead();
-        ctl.uictl.viewui.TitleGame.text = "GAME OVER!!!";
         ctl.uictl.viewui.setGameoverscore();
         ctl.uictl.checkBestscore();
         ctl.uictl.viewui.setBestcore();

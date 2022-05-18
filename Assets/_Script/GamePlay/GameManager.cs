@@ -26,4 +26,9 @@ public class GameManager : MonoBehaviour
         ctl.uictl.viewui.pauseGame.SetActive(false);
         ctl.audioctl.playAudiobg();
     }
+    public void nextLevel2()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Level2");
+    }
 }

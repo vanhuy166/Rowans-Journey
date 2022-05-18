@@ -14,11 +14,10 @@ public class WinZonePlayer : MonoBehaviour
     {
         Debug.Log("Win");
         Time.timeScale = 0f;
-        ctl.uictl.viewui.gameover.SetActive(true);
-        ctl.uictl.viewui.TitleGame.text = "YOU WIN!!!";
-        ctl.uictl.viewui.setGameoverscore();
+        ctl.uictl.viewui.winGame.SetActive(true);
+        ctl.uictl.viewui.setWinGameScore();
         ctl.uictl.checkBestscore();
-        ctl.uictl.viewui.setBestcore();
+        ctl.uictl.viewui.setBestcoreWin();
         ctl.audioctl.pauseAudiobg();
         ctl.audioctl.playAudiowingame();
     }

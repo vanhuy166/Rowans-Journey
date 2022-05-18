@@ -11,8 +11,10 @@ public class viewUI : MonoBehaviour
     public Image isSkill;
     public GameObject gameover;
     public Text gameoverscore;
+    public Text winGameScore;
     public Text TitleGame;
     public Text bestscore;
+    public Text bestscore1;
     public GameObject pauseGame;
     public GameObject winGame;
     public int mark=0;
@@ -58,8 +60,16 @@ public class viewUI : MonoBehaviour
     {
         gameoverscore.text = "" + mark;
     }
+    public void setWinGameScore()
+    {
+        winGameScore.text = "" + mark;
+    }
     public void setBestcore()
     {
         bestscore.text = "best : "+ PlayerPrefs.GetInt("bestscore");
+    }
+    public void setBestcoreWin()
+    {
+        bestscore1.text = "best : " + PlayerPrefs.GetInt("bestscore");
     }
 }
