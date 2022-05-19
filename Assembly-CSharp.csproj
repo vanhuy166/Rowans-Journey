@@ -65,6 +65,7 @@
     <Compile Include="Assets\_Script\GamePlay\controller\controller.cs" />
     <Compile Include="Assets\_Script\GamePlay\view\viewBarrier.cs" />
     <Compile Include="Assets\_Script\GamePlay\controller\UICtl\UICtl.cs" />
+    <Compile Include="Assets\_Script\MenuGame\controllerMenu.cs" />
     <Compile Include="Assets\_Script\GamePlay\view\WinZonePlayer.cs" />
     <Compile Include="Assets\_Script\GamePlay\controller\PlayerCtl\playerCtl.cs" />
     <Compile Include="Assets\_Script\GamePlay\view\viewSprings.cs" />
@@ -74,7 +75,7 @@
     <Compile Include="Assets\_Script\GamePlay\view\viewAudio.cs" />
     <Compile Include="Assets\_Script\GamePlay\view\viewUI.cs" />
     <Compile Include="Assets\_Script\GamePlay\camera.cs" />
-    <Compile Include="Assets\_Script\MenuGame\controllerMenu.cs" />
+    <Compile Include="Assets\_Script\GamePlay\view\BossMove.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

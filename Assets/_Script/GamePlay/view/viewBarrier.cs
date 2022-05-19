@@ -22,7 +22,7 @@ public class viewBarrier : MonoBehaviour
         if (collision.gameObject.name == "Player"&& ctl.playerctl.modelplayer.getRunspeed() <= ctl.playerctl.modelplayer.getRunspeed1())
         {
             runSpeed--;
-            Debug.Log(runSpeed);
+            //Debug.Log(runSpeed);
             ctl.playerctl.modelplayer.setRunspeed(runSpeed);
         }
         else if (collision.gameObject.name == "Player" && ctl.playerctl.modelplayer.getRunspeed() > ctl.playerctl.modelplayer.getRunspeed1())
