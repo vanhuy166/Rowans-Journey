@@ -18,6 +18,7 @@ public class controller : MonoBehaviour
     private void Start()
     {
         audioctl.playAudiobg();
+        audioctl.pauseAudioMenu();
     }
     private void Update()
     {

@@ -8,6 +8,7 @@ public class audioCtl : MonoBehaviour
     private void Awake()
     {
         viewaudio = GameObject.Find("Audio").GetComponent<viewAudio>();
+        viewaudio.MainMenu.Play();
     }
 
     public void playAudiobg()
@@ -41,5 +42,13 @@ public class audioCtl : MonoBehaviour
     public void playAudiowingame()
     {
         viewaudio.win.Play();
+    }
+    public void playAudioMenu()
+    {
+        viewaudio.MainMenu.Play();
+    }
+    public void pauseAudioMenu()
+    {
+        viewaudio.MainMenu.Pause();
     }
 }
