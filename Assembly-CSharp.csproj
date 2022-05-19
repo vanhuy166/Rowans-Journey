@@ -58,12 +58,14 @@
     <Compile Include="Assets\_Script\GamePlay\controller\audioCtl\audioCtl.cs" />
     <Compile Include="Assets\_Script\GamePlay\controller\enemiesCtl\enemiesCtl.cs" />
     <Compile Include="Assets\_Script\GamePlay\view\viewEnemies.cs" />
+    <Compile Include="Assets\_Script\GamePlay\view\DeadZonePlayer.cs" />
     <Compile Include="Assets\_Script\GamePlay\controller\PlayerCtl\playerSkill.cs" />
     <Compile Include="Assets\_Script\GamePlay\controller\PlayerCtl\checkDead.cs" />
     <Compile Include="Assets\_Script\GamePlay\view\viewPlayer.cs" />
     <Compile Include="Assets\_Script\GamePlay\controller\controller.cs" />
     <Compile Include="Assets\_Script\GamePlay\view\viewBarrier.cs" />
     <Compile Include="Assets\_Script\GamePlay\controller\UICtl\UICtl.cs" />
+    <Compile Include="Assets\_Script\GamePlay\view\WinZonePlayer.cs" />
     <Compile Include="Assets\_Script\GamePlay\controller\PlayerCtl\playerCtl.cs" />
     <Compile Include="Assets\_Script\GamePlay\view\viewSprings.cs" />
     <Compile Include="Assets\_Script\GamePlay\model\modelEnemies.cs" />
@@ -71,11 +73,8 @@
     <Compile Include="Assets\_Script\GamePlay\controller\PlayerCtl\playerMovement.cs" />
     <Compile Include="Assets\_Script\GamePlay\view\viewAudio.cs" />
     <Compile Include="Assets\_Script\GamePlay\view\viewUI.cs" />
-    <Compile Include="Assets\_Script\GameGuide\ContainerController.cs" />
-    <Compile Include="Assets\_Script\GameGuide\UI_Controller.cs" />
     <Compile Include="Assets\_Script\GamePlay\camera.cs" />
-    <Compile Include="Assets\_Script\GamePlay\view\WinZonePlayer.cs" />
-    <Compile Include="Assets\_Script\GamePlay\view\DeadZonePlayer.cs" />
+    <Compile Include="Assets\_Script\MenuGame\controllerMenu.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

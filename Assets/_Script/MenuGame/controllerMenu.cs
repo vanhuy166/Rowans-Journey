@@ -17,6 +17,7 @@ public class controllerMenu : MonoBehaviour
 
     public void StartGame()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Level1");
     }
     public void StartMenuGame()
