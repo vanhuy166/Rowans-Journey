@@ -165,4 +165,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  coin: 2
   lengthBoss: 15

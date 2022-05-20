@@ -5,13 +5,14 @@ using UnityEngine;
 public class UICtl : MonoBehaviour
 {
     public viewUI viewui;
+    
     private void Awake()
     {
         viewui = GameObject.Find("UI").GetComponent<viewUI>();
     }
-    public void congdiem()
+    public void congdiem(int coint)
     {
-        viewui.mark++;
+        viewui.mark+=coint;
         viewui.setScore();
     }
     public void congSkill()

@@ -6,6 +6,8 @@ public class viewTreasure : MonoBehaviour
 {
     public Animator ani;
     public controller ctl;
+    public int coin;
+
     private void Awake()
     {
         ctl = GameObject.Find("controller").GetComponent<controller>();
@@ -17,7 +19,7 @@ public class viewTreasure : MonoBehaviour
         if(collision.gameObject.name == "Player")
         {
             ctl.uictl.congSkill();
-            ctl.uictl.congdiem();
+            ctl.uictl.congdiem(coin);
             ctl.audioctl.playAudioitem();
 
             ani.SetBool("dead", true);

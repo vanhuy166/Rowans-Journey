@@ -12,14 +12,17 @@ public class WinZonePlayer : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Win");
-        Time.timeScale = 0f;
-        ctl.uictl.viewui.winGame.SetActive(true);
-        ctl.uictl.viewui.setWinGameScore();
-        ctl.uictl.checkBestscore();
-        ctl.uictl.viewui.setBestcoreWin();
-        ctl.audioctl.pauseAudiobg();
-        ctl.audioctl.playAudiowingame();
+        if (collision.gameObject.name == "Player")
+        {
+            Debug.Log("Win");
+            Time.timeScale = 0f;
+            ctl.uictl.viewui.winGame.SetActive(true);
+            ctl.uictl.viewui.setWinGameScore();
+            ctl.uictl.checkBestscore();
+            ctl.uictl.viewui.setBestcoreWin();
+            ctl.audioctl.pauseAudiobg();
+            ctl.audioctl.playAudiowingame();
+        }
     }
 }
 

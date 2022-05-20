@@ -9,6 +9,7 @@ public class BossMove : MonoBehaviour
     private Animator ani;
     private SpriteRenderer boss;
 
+    public int coin;
     public float lengthBoss;
     private float length = 0f;
     private Vector3 deltaLength;
@@ -52,11 +53,12 @@ public class BossMove : MonoBehaviour
     {
         if (collision.gameObject.name == "Player" && ctl.playerctl.modelplayer.getRunspeed() > ctl.playerctl.modelplayer.getRunspeed1())
         {
+            ctl.uictl.congdiem(coin);
             ani.SetBool("killBoss", true);
             Destroy(gameObject, 0.3f);
             ctl.audioctl.playAudiobreak();
         }
-        else if (collision.gameObject.name == "Player" && ctl.playerctl.modelplayer.getRunspeed() <= ctl.playerctl.modelplayer.getRunspeed1())
+        else if (collision.gameObject.name == "Player")
         {
             Time.timeScale = 0f;
             ctl.playerctl.modelplayer.setRunspeed(0.0f);

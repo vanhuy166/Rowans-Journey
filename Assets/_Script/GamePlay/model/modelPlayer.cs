@@ -22,7 +22,7 @@ public class modelPlayer : MonoBehaviour
     }
     public void Awake()
     {
-        setRunspeed(10f);
+        //setRunspeed(10f);
         runSpeed1 = runSpeed;
     }
 }

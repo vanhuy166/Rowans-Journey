@@ -7,6 +7,8 @@ public class viewBarrier : MonoBehaviour
     private controller ctl;
     private Animator ani;
 
+    public int coin;
+
 
     private float runSpeed;
 
@@ -25,8 +27,9 @@ public class viewBarrier : MonoBehaviour
             //Debug.Log(runSpeed);
             ctl.playerctl.modelplayer.setRunspeed(runSpeed);
         }
-        else if (collision.gameObject.name == "Player" && ctl.playerctl.modelplayer.getRunspeed() > ctl.playerctl.modelplayer.getRunspeed1())
+        else if (collision.gameObject.name == "Player")
         {
+            ctl.uictl.congdiem(coin);
             ani.SetBool("breakBarrier", true);
             Destroy(gameObject,0.4f);
             ctl.audioctl.playAudiobreak();
