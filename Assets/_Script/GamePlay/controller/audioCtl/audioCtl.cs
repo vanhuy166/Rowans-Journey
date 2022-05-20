@@ -51,4 +51,10 @@ public class audioCtl : MonoBehaviour
     {
         viewaudio.MainMenu.Pause();
     }
+    public void playAudioKillBoss()
+    {
+        viewaudio.killBoss.Play();
+    }
+
+
 }

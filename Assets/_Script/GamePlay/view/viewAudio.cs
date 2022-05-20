@@ -12,4 +12,5 @@ public class viewAudio : MonoBehaviour
     public AudioSource gameover;
     public AudioSource win;
     public AudioSource MainMenu;
+    public AudioSource killBoss;
 }

@@ -55,8 +55,8 @@ public class BossMove : MonoBehaviour
         {
             ctl.uictl.congdiem(coin);
             ani.SetBool("killBoss", true);
+            ctl.audioctl.playAudioKillBoss();
             Destroy(gameObject, 0.3f);
-            ctl.audioctl.playAudiobreak();
         }
         else if (collision.gameObject.name == "Player")
         {
