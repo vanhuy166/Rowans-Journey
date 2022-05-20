@@ -53,13 +53,14 @@ public class BossMove : MonoBehaviour
         if (collision.gameObject.name == "Player" && ctl.playerctl.modelplayer.getRunspeed() > ctl.playerctl.modelplayer.getRunspeed1())
         {
             ani.SetBool("killBoss", true);
-            Destroy(gameObject, 0.2f);
+            Destroy(gameObject, 0.3f);
             ctl.audioctl.playAudiobreak();
         }
-        else if (collision.gameObject.name == "Player")
+        else if (collision.gameObject.name == "Player" && ctl.playerctl.modelplayer.getRunspeed() <= ctl.playerctl.modelplayer.getRunspeed1())
         {
             Time.timeScale = 0f;
             ctl.playerctl.modelplayer.setRunspeed(0.0f);
+            ctl.playerctl.modelplayer.jumpSpeed = 0.0f;
             ctl.uictl.viewui.gameover.SetActive(true);
             ctl.playerctl.viewplayer.dead();
             ctl.uictl.viewui.setGameoverscore();
@@ -67,6 +68,9 @@ public class BossMove : MonoBehaviour
             ctl.uictl.viewui.setBestcore();
             ctl.audioctl.pauseAudiobg();
             ctl.audioctl.playAudiogameover();
+
+
+        
         }
 
     }

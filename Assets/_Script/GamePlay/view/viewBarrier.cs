@@ -19,7 +19,7 @@ public class viewBarrier : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         runSpeed = ctl.playerctl.modelplayer.runSpeed;
-        if (collision.gameObject.name == "Player"&& ctl.playerctl.modelplayer.getRunspeed() <= ctl.playerctl.modelplayer.getRunspeed1())
+        if (collision.gameObject.name == "Player" && ctl.playerctl.modelplayer.getRunspeed() <= ctl.playerctl.modelplayer.getRunspeed1())
         {
             runSpeed--;
             //Debug.Log(runSpeed);
