@@ -119,10 +119,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 723
-  m_MinSize: {x: 678, y: 492}
-  m_MaxSize: {x: 14001, y: 14042}
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 66
+  controlID: 73
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 94
+  controlID: 105
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 95
+  controlID: 106
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -274,8 +274,8 @@ MonoBehaviour:
     y: 0
     width: 306
     height: 723
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -350,18 +350,18 @@ MonoBehaviour:
       y: 21
       width: 916
       height: 410
-    m_Scale: {x: 1.2169503, y: 1.2169503}
-    m_Translation: {x: 458, y: 205.00002}
+    m_Scale: {x: 1.1450286, y: 1.1450286}
+    m_Translation: {x: 458, y: 205}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -376.35062
-      y: -168.45389
-      width: 752.70123
-      height: 336.90778
+      x: -399.99002
+      y: -179.03484
+      width: 799.98004
+      height: 358.06967
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1145, y: 538.75}
@@ -398,23 +398,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 0a9e0000
-      m_LastClickedID: 40458
-      m_ExpandedIDs: 9ae2ffff9ceaffff38fbffffa44f0000aa500000ba500000248e0000008f00000e9d0000149e0000249e00007c9e0000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 38fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: enermy
-        m_OriginalName: enermy
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -8914
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -722,14 +722,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 0.6959999
+    - e00: 0.92045987
       e01: 0
       e02: 0
-      e03: -19.799988
+      e03: -237.87445
       e10: 0
-      e11: 0.6959999
+      e11: 0.92045987
       e12: 0
-      e13: 115.96001
+      e13: 102.40211
       e20: 0
       e21: 0
       e22: 1
@@ -792,22 +792,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/ani/GamePlay/boss/enermyMap2
+    - Assets/prefab
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 95
   m_LastFolders:
-  - Assets/ani/GamePlay/boss/enermyMap2
+  - Assets/prefab
   m_LastFoldersGridSize: 95
   m_LastProjectPath: D:\downloads\BTLGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 255}
-    m_SelectedIDs: 02560000
-    m_LastClickedID: 22018
-    m_ExpandedIDs: 00000000ee550000f0550000f2550000f4550000f6550000f8550000fa550000fe5500001e560000ce77000000ca9a3b
+    scrollPos: {x: 0, y: 158}
+    m_SelectedIDs: 14560000
+    m_LastClickedID: 22036
+    m_ExpandedIDs: 00000000ee550000f0550000f2550000f4550000f6550000f8550000fa550000fc55000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -835,7 +835,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ee550000f0550000f2550000f4550000f6550000f8550000fa550000
+    m_ExpandedIDs: 00000000ee550000f0550000f2550000f4550000f6550000f8550000fa550000fc550000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -862,7 +862,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000168e000010520000c2530000a80a010068580000580d0100ee310000be5300001abb00001ebb00000ebb000022bb000016bb000012bb00009c29010000000000086d0000607400001e620000487e0000ce7c00005862000044540000b8530000687600007e7f000060800000ec6b00008a5e0000645e0000725e0000f2910100605e00006e5e000036600000806000000e540000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
