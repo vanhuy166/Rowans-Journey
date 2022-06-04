@@ -10,6 +10,7 @@ public class controllerMenu : MonoBehaviour
     public GameObject moveGuideGame;
     public GameObject skillGuideGame;
 
+
     public void Awake()
     {
         StartMenuGame();
@@ -34,7 +35,7 @@ public class controllerMenu : MonoBehaviour
         introduceGuideGame.SetActive(true);
         moveGuideGame.SetActive(false);
         skillGuideGame.SetActive(false);
-        
+
     }
 
     public void StartMoveGuideGame()
