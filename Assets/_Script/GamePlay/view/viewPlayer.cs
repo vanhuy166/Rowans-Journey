@@ -51,11 +51,11 @@ public class viewPlayer : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "Barrier" && ctl.playerctl.modelplayer.getRunspeed() < ctl.playerctl.modelplayer.getRunspeed1())
+        if (collision.gameObject.name == "Barrier" && ctl.playerctl.modelplayer.getRunspeed() <= ctl.playerctl.modelplayer.getRunspeed1())
         {
             StartCoroutine("collisionBarrier");
         }
-        else if (collision.gameObject.name == "Trap" && ctl.playerctl.modelplayer.getRunspeed() < ctl.playerctl.modelplayer.getRunspeed1())
+        else if (collision.gameObject.name == "Trap" && ctl.playerctl.modelplayer.getRunspeed() <= ctl.playerctl.modelplayer.getRunspeed1())
         {
             StartCoroutine("collisionTrap");
         }
